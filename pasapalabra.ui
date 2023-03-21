@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1286</width>
+    <height>674</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>20</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>PasaPalabra</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.401, y1:0.512, x2:0.459, y2:0, stop:0 rgba(53, 74, 188, 255), stop:1 rgba(255, 255, 255, 255));</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QDial" name="wjugadores">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>230</y>
+      <width>250</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+selection-color: rgb(255, 255, 255);
+background-color: rgb(87, 227, 137);
+border-radius: 20px;</string>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>5</number>
+    </property>
+    <property name="pageStep">
+     <number>1</number>
+    </property>
+    <property name="wrapping">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="wjugadoresL">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>120</y>
+      <width>250</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+border-top-left-radius : 20px;
+border-bottom-right-radius : 20px;</string>
+    </property>
+    <property name="text">
+     <string>Jugadores 1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="wsalir">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>570</y>
+      <width>100</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+border-top-left-radius : 20px;
+border-bottom-right-radius : 20px;</string>
+    </property>
+    <property name="text">
+     <string>Salir</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="winicio">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>570</y>
+      <width>100</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+border-top-left-radius : 20px;
+border-bottom-right-radius : 20px;</string>
+    </property>
+    <property name="text">
+     <string>Jugar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="wtiempoL">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>120</y>
+      <width>250</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+border-top-left-radius : 20px;
+border-bottom-right-radius : 20px;</string>
+    </property>
+    <property name="text">
+     <string>Tiempo 120</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QDial" name="wtiempo">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>230</y>
+      <width>250</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+selection-color: rgb(255, 255, 255);
+background-color: rgb(87, 227, 137);</string>
+    </property>
+    <property name="minimum">
+     <number>120</number>
+    </property>
+    <property name="maximum">
+     <number>210</number>
+    </property>
+    <property name="singleStep">
+     <number>30</number>
+    </property>
+    <property name="pageStep">
+     <number>30</number>
+    </property>
+    <property name="value">
+     <number>120</number>
+    </property>
+    <property name="wrapping">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="wstart">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>290</y>
+      <width>291</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color : rgb(255,255,255);
+background-color: qlineargradient(spread:pad, x1:0.466, y1:0.352636, x2:0.459, y2:0, stop:0 rgba(72, 149, 42, 255), stop:1 rgba(255, 255, 255, 255));
+font-weight: bold;
+padding: 2 px;
+border-width: 2 px, 2 px,2 px,2 px;
+border-top-left-radius : 20px;
+border-bottom-right-radius : 20px;
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>Presiona para empezar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="wpregunta">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>470</y>
+      <width>471</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0.466, y1:0.483, x2:0.478, y2:0, stop:0 rgba(36, 59, 181, 255), stop:1 rgba(255, 255, 255, 255));
+color : rgb(255,255,255);
+border-top-left-radius : 20px;
+border-bottom-right-radius : 20px;
+border-width : 2px 2px 2px 2px;
+font-weight: bold;
+
+</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="wtimer">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>220</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0.466, y1:0.483, x2:0.478, y2:0, stop:0 rgba(36, 59, 181, 255), stop:1 rgba(255, 255, 255, 255));
+color : rgb(255,255,255);
+border-top-left-radius : 15px;
+border-bottom-right-radius : 15px;
+border-width : 2px 2px 2px 2px;
+font-weight: bold;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="wrespuesta">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>550</y>
+      <width>401</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0.471, y1:0.0513182, x2:0.497, y2:0.835636, stop:0 rgba(36, 59, 181, 255), stop:1 rgba(255, 255, 255, 255));
+color : rgb(255,255,255);
+border-top-left-radius : 15px;
+border-bottom-right-radius : 15px;
+border-width : 2px 2px 2px 2px;
+font-weight: bold;
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="wrespuestaL">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0.466, y1:0.483, x2:0.478, y2:0, stop:0 rgba(36, 59, 181, 255), stop:1 rgba(255, 255, 255, 255));
+color : rgb(255,255,255);
+border-top-left-radius : 20px;
+border-bottom-right-radius : 20px;
+border-width : 2px 2px 2px 2px;
+font-weight: bold;
+
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="wmensaje">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>550</y>
+      <width>401</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0.466, y1:0.483, x2:0.478, y2:0, stop:0 rgba(36, 59, 181, 255), stop:1 rgba(255, 255, 255, 255));
+color : rgb(255,255,255);
+border-top-left-radius : 15px;
+border-bottom-right-radius : 15px;
+border-width : 2px 2px 2px 2px;
+font-weight: bold;
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
